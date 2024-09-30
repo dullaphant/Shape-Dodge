@@ -149,7 +149,7 @@ function createObstacle() {
     const obstacleSize = 10 + Math.random() * 80;
     const x = Math.random() * (gameCanvas.width - obstacleSize);
     const y = -obstacleSize;
-    const speed = 0.05 + Math.random() * 20;
+    const speed = 0.05 + Math.random() * 15;
     obstacles.push({ x, y, width: obstacleSize, height: obstacleSize, speed });
 }
 
