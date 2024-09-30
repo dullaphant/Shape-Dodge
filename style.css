@@ -1,0 +1,68 @@
+/* General Styles */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden;
+  background: url('assets/background.png') no-repeat center center fixed;
+  background-size: cover;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+/* Hide/Show elements */
+.hide {
+  display: none;
+}
+
+/* Menu Styles */
+#menu {
+  padding: 50px;
+}
+
+button {
+  padding: 10px 20px;
+  margin: 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#shapeOptions {
+  margin-top: 20px;
+}
+
+/* Game Canvas */
+#gameCanvas {
+  border: 2px solid #000;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Score Display */
+#scores {
+  margin: 10px;
+  font-size: 18px;
+}
+
+/* Virtual Joystick */
+.joystick {
+  position: absolute;
+  bottom: 10%;
+  left: 10%;
+  width: 100px;
+  height: 100px;
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 50%;
+  touch-action: none;
+}
+
+.joystick-handle {
+  width: 40px;
+  height: 40px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  touch-action: none;
+}

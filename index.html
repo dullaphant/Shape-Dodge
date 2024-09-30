@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dodge the Objects Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Menu -->
+    <div id="menu">
+        <h1>Welcome to Dodge Game</h1>
+        <p>High Score: <span id="menuHighScore">0</span></p> <!-- High score in menu -->
+        <button id="startGameBtn">Start Game</button>
+        <button id="changeColorBtn">Change Color</button>
+        <button id="closeSiteBtn">Close</button>
+        
+        <!-- Shape and Color Options -->
+        <div id="shapeOptions" class="hide">
+            <h3>Select Color:</h3>
+            <button class="colorBtn" data-color="red">Red</button>
+            <button class="colorBtn" data-color="blue">Blue</button>
+            <button class="colorBtn" data-color="green">Green</button>
+            <button class="colorBtn" data-color="pink">Pink</button>
+            <button class="colorBtn" data-color="purple">Purple</button>
+            <h3>Select Shape:</h3>
+            <button class="shapeBtn" data-shape="circle">Circle</button>
+            <button class="shapeBtn" data-shape="square">Square</button>
+            <button class="shapeBtn" data-shape="triangle">Triangle</button>
+        </div>
+    </div>
+
+    <!-- Game Canvas -->
+    <div id="game" class="hide">
+        <canvas id="gameCanvas"></canvas>
+        <div id="scores">
+            <p>Current Score: <span id="currentScore">0</span></p>
+            <p>High Score: <span id="highScore">0</span></p>
+        </div>
+        
+    <!-- Audio -->
+    <audio id="gameMusic" src="assets/game.mp3" loop></audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
